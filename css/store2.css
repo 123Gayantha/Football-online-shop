@@ -1,0 +1,178 @@
+
+
+.container .products-container .product .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container .products-container .product .options label {
+    margin-right: 5px;
+}
+
+.container .products-container .product .options input,
+.container .products-container .product .options select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.container .products-container .product .options select {
+    min-width: 80px;
+}
+
+
+
+
+#Registration-form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #b5b0b0;
+    border-radius: 5px;
+    padding: 20px 50px 40px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+}
+
+#Registration-form * {
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+}
+#Registration-form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d90606;
+
+}
+
+#Registration-form input {
+    margin-bottom: 15px;
+
+}
+
+#Registration-form input[type=text] {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+    color: black;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+
+}
+#Registration-form input[type=email] {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+#Registration-form input[type=password] {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+#Registration-form input[type=number] {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    -moz-appearance:textfield;
+}
+#Registration-form label {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+    display: block;
+    height: auto;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color:transparent;
+}
+#Registration-form select {
+    display: block;
+    padding: 0px 1em 0px 0px ;
+    padding-right: 0px;
+    height: 32px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    color: black;
+}
+#Registration-form option {
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    color: black;
+
+}
+
+#Registration-form input[type=checkbox] {
+    float: left;
+}
+.button {
+    border-radius: 1500px;
+    border-color: transparent;
+    box-shadow: 2px 0px 11px #999799;
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    background: #d90606;
+    padding: 9px 60px 9px 60px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button:hover {
+    background: rgb(89, 80, 80);
+    text-decoration: none;
+}
+#Registration-form ::placeholder{
+    color : #aaaaaa;
+}
+#Registration-form .input::-webkit-outer-spin-button,
+#Registration-form .input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

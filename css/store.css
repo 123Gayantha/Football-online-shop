@@ -1,0 +1,146 @@
+
+/* Set a default font size */
+html {
+    font-size: 62.5%;
+  }
+  
+  /* Adjust the body styles */
+  body {
+    background-color: rgb(172, 155, 155);
+    background: rgba(117, 113, 113, 0.226) url('images/backg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: darken;
+    color: #ffffff;
+    font-size: 1.6rem; /* 16px (default) * 1.6 = 25.6px */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+  
+  /* Center the header title */
+  .title h3, .title h5 {
+    text-align: center;
+    
+  }
+  
+  /* Adjust font sizes for better responsiveness */
+  .title h3 {
+    font-size: 4rem;
+  }
+  
+  .title h5 {
+    font-size: 2.4rem;
+  }
+  
+  /* Set a responsive grid for products */
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem; /* Add some horizontal padding to the container */
+  }
+  
+  .container .products-container .product {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: yellowgreen;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .products-container .product img {
+    height: 400px;
+    width: 300px; /* Make the image responsive */
+    object-fit: cover; /* Ensure the image retains its aspect ratio */
+    border-radius: 5px;
+  }
+  
+  .container .products-container .product h3 {
+    padding: .2rem 0;
+    font-size: 2rem;
+    color: #444;
+  }
+  
+  .container .products-container .product .price {
+    font-size: 1.8rem;
+    color: #444;
+  }
+  
+  .container .products-container .product .buy {
+    font-size: 2rem;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    background: #444;
+    border-color: red;
+  }
+  
+  /* Adjust the responsive styles for hover effects */
+  .container .products-container .product:hover img {
+    transform: scale(0.9);
+  }
+  
+  .container .products-container .product:hover h3 {
+    color: #d90606;
+    transform: scale(0.9);
+  }
+  
+  .container .products-container .product:hover .buy {
+    font-size: 2rem;
+    color: #d90606;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    transform: scale(0.8);
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .title h3 {
+      font-size: 3rem;
+    }
+  
+    .title h5 {
+      font-size: 2rem;
+    }
+  
+    .products-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .container .products-container .product {
+      padding: 2rem 1rem;
+    }
+  
+    .container .products-container .product img {
+      height: 12rem;
+    }
+  
+    .container .products-container .product h3 {
+      font-size: 1.6rem;
+    }
+  
+    .container .products-container .product .price {
+      font-size: 1.6rem;
+    }
+  
+    .container .products-container .product .buy {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Hide the scroll-up button on small screens */
+  .scrollUpButton {
+    display: none;
+  }
+  
+  /* Display the scroll-up button when needed */
+  @media (min-width: 558px) {
+    .scrollUpButton {
+      display: block;
+    }
+  }
+  
